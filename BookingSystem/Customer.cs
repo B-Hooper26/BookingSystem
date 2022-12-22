@@ -16,21 +16,25 @@ namespace BookingSystem
         public string Address { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
+        public int CustomerFee { get; set; }
 
         //constructor
-        public Customer (string name, string address, string email, string phonenumber)
+        public Customer (string name, string address, string email, string phonenumber,int customerfee)
         {
             Name = name;
             Address = address;
             Email = email;
-            PhoneNumber = phonenumber;
+            PhoneNumber = phonenumber;  
+            CustomerFee = customerfee;
+
+
         }
         public override string ToString()
         {
             //creating conditions so data enter is correct data
             if (Email.Contains("@") && PhoneNumber.Length == 11)
             {
-                return $"Customer Details\n\n Name: {Name}\nAddress: {Address}\n Email: {Email}\n Phone Number: {PhoneNumber}";
+                return $"Customer Details\n\nName: {Name}\nAddress: {Address}\nEmail: {Email}\nPhone Number: {PhoneNumber}\nCustomer Fee: {CustomerFee} ";
             }
             else
             {
