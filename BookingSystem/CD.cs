@@ -12,7 +12,7 @@ namespace BookingSystem
         public string CDsize { get; set; }
         //inheriting properties from item class
 
-        public CD (string cdUniqueCOde, string cDsize, string Title, DateTime StartDate): base (Title, StartDate)
+        public CD (string cdUniqueCOde, string cDsize, string Title): base (Title)
         {
             CDsize = cDsize;
             CdUniqueCOde = cdUniqueCOde;
@@ -20,7 +20,7 @@ namespace BookingSystem
 
         public override string ToString()
         {
-            return $"\nCD  details:\n, Title of item: {Title}\n,CD Code: {CdUniqueCOde}\n,CD Size: {CDsize}, Start Date: {StartDate}";
+            return $"\n\tCD details:\nTitle of item: {Title}\nCD Code: {CdUniqueCOde}\nCD Size: {CDsize}\n";
         }
     }
 }

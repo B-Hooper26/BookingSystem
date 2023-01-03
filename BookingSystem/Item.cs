@@ -13,24 +13,24 @@ namespace BookingSystem
         
         public string Title { get; set; }
 
-        public DateTime StartDate { get; set; }
+        
 
 
 
 
 
-        public Item ( string title, DateTime startdate)
+        public Item ( string title)
         {
             
             Title = title;
-            this.StartDate = startdate;
+            
         }
 
         public override string ToString()
 
         {
 
-            return $"\nItem details:\n, Title of item: {Title}\n, Start Date: {StartDate}";
+            return $"\n\tItem details:\nTitle of item: {Title}";
         }
     }
 }
