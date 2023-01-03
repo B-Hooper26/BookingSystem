@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookingSystem
 {
-
+    //inheriting from the customer class
     internal class CustomerDetails : Customer
     {
 

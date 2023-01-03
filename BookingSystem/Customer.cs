@@ -32,9 +32,9 @@ namespace BookingSystem
         public override string ToString()
         {
             //creating conditions so data enter is correct data
-            if (Email.Contains("@") && PhoneNumber.Length == 11)
+            if (Email.Contains("@") && Email.Contains(".com") && PhoneNumber.Length == 11)
             {
-                return $"Customer Details\n\nName: {Name}\nAddress: {Address}\nEmail: {Email}\nPhone Number: {PhoneNumber}\nCustomer Fee: {CustomerFee} ";
+                return $"\n-----Customer Details-----\nName: {Name}\nAddress: {Address}\nEmail: {Email}\nPhone Number: {PhoneNumber}\nCustomer Fee: {CustomerFee} ";
             }
             else
             {
