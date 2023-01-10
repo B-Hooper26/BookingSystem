@@ -12,13 +12,7 @@ namespace BookingSystem
         //constructor
         
         public string Title { get; set; }
-
         
-
-
-
-
-
         public Item ( string title)
         {
             

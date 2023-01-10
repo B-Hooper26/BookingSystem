@@ -11,6 +11,7 @@ namespace BookingSystem
         //fee for any overdue items
         public int CustomerFee { get; set; }
         public string CustomerReference { get; set; }
+        public List<Item> Items { get; set; }
 
         public BookingDetails (int customerFee, string customerReference)
         {

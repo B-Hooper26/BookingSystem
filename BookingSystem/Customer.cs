@@ -34,7 +34,7 @@ namespace BookingSystem
             //creating conditions so data enter is correct data
             if (Email.Contains("@") && Email.Contains(".com") && PhoneNumber.Length == 11)
             {
-                return $"\n-----Customer Details-----\nName: {Name}\nAddress: {Address}\nEmail: {Email}\nPhone Number: {PhoneNumber}\nCustomer Fee: {CustomerFee} ";
+                return $"\nName: {Name}\nAddress: {Address}\nEmail: {Email}\nPhone Number: {PhoneNumber}\n";
             }
             else
             {

@@ -20,7 +20,7 @@ namespace BookingSystem
 
         public override string ToString()
         {
-            return $"\n\tCD details:\nTitle of item: {Title}\nCD Code: {CdUniqueCOde}\nCD Size: {CDsize}\n";
+            return $"\nTitle of item: {Title}\nCD Code: {CdUniqueCOde}\nCD Size: {CDsize}";
         }
     }
 }
